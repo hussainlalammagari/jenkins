@@ -1,16 +1,1 @@
-pipeline {
-    
-    environment {
-        CI = 'true'
-    }
-    stages {
-        stage('Build') {
-            steps {
-                sh 'npm install'
-            }
-        }
-       
-       
-        }
-    }
-}
+echo "Hello second jenkins: %date% : %time%"
