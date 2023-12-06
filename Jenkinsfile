@@ -1,1 +1,11 @@
-echo "Hello second jenkins: %date% : %time%"
+pipeline {
+      agent any
+	  stages {
+	    stage{"Hello"}{
+		    steps{
+			echo "welcome to jenkins pipeline"
+			}
+			}
+			}
+			}
+			
