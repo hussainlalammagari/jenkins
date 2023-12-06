@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Run') {
+        stage('Test') {
             steps {
-                sh echo "Hello second jenkins: %date% : %time%"
+                sh 'echo "Hello second jenkins: %date% : %time%"; exit 1'  
             }
         }
     }
