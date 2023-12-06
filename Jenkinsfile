@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Run') {
             steps {
-                sh 'echo "Fail!"; exit 1'
+                sh echo "Hello second jenkins: %date% : %time%"
             }
         }
     }
